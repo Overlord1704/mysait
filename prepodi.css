@@ -1,0 +1,59 @@
+body {
+    font-family: Open Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+	background-image: url('headwall.jpg'); /* Путь к текстуре */
+    background-size: cover; /* Масштабируем текстуру, чтобы она покрывала весь элемент */
+    background-repeat: no-repeat; /* Не повторяем текстуру */
+    background-position: center; /* Центрируем текстуру */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+figure {
+    margin: 0; /* Убираем внешние отступы у figure */
+    padding: 0; /* Убираем внутренние отступы у figure */
+}
+
+.image-block {
+    width: 30%;
+	height: 490px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    transition: transform 0.5s;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+.image-block img {
+    width: 100%;
+    height: auto; /* Изменяем на auto для сохранения пропорций */
+    object-fit: cover;
+    margin: 0; /* Убираем внешние отступы */
+    display: block; /* Убираем пробелы под изображением */
+}
+
+.image-text {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    background-color: #e0f7fa; /* Цвет фона текста */
+    border-top: 2px solid #4CAF50; /* Граница сверху */
+    margin: 0; /* Убираем внешние отступы */
+}
+

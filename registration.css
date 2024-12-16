@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif; /*Шрифт*/
+    background-color: #f4f4f4; /* Цвет фона */
+    margin: 0; /* Отступ */
+    padding: 0; /* Отступ внутри */
+    display: flex; /* Содержимое по центру */
+    justify-content: center; /* По горизонтали и по центру */
+    align-items: center; /* По горизонтали и по ветрикали */
+    height: 100vh; 
+}
+
+.container {
+    background: white; 
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 5px; /* Закругленные углы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+    width: 300px; /* Ширина  */
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 100%; 
+    padding: 10px; 
+    margin: 5px 0; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+
+button {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #73ebf5; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #69b6bd; 
+}
+
+#message {
+    text-align: center;
+    margin-top: 10px; 
+    color: red; 
+}

@@ -1,0 +1,20 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Отправка новостей</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script-news.js" defer></script>
+</head>
+<body>
+    <h1>Отправить новость</h1>
+    <form id="newsForm">
+        <label for="title">Заголовок:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
+        <label for="content">Содержание:</label>
+        <textarea id="content" name="content" required></textarea>
+        <br>
+        <button type="submit">Отправить новость</button>
+    </form>
+    <div id="responseMessage"></div>
+</body>
+</html>

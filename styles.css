@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
+}
+
+header {
+    background-color: #00a733; /* Зелёный фон */
+    background-image: url('headwall.jpg'); /* Путь к текстуре */
+    background-size: cover; /* Масштабируем текстуру, чтобы она покрывала весь элемент */
+    background-repeat: no-repeat; /* Не повторяем текстуру */
+    background-position: center; /* Центрируем текстуру */
+    padding: 20px; /* Отступы для шапки */
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Центрирование содержимого */
+}
+
+.image-dir {
+    flex-shrink: 0; /* Запрет на сжатие изображения */
+    margin-right: 20px; /* Отступ справа от изображения */
+}
+
+.image {
+    max-width: 100px; /* Ограничиваем ширину изображения */
+    height: auto; /* Сохраняем пропорции изображения */
+}
+
+.text {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-align: center; /* Центрируем текст */
+}
+
+.head-ssylki {
+    display: flex;
+    justify-content: center; /* Центрирование ссылок */
+    align-items: center; /* Вертикальное выравнивание */
+    margin-top: 10px; /* Отступ сверху */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Расстояние между ссылками */
+}
+
+.nav-buttons {
+    margin-left: auto; /* Сдвигает кнопки вправо */
+}
+
+.head-ssylki a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.head-ssylki a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button {
+    background-color: #ff3f3f;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: black;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #69b6bd;
+}
+
+.history, .spec {
+    background-color: white;
+    padding: 20px;
+    margin: 20px; /* Отступы вокруг блоков */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+
+/* Добавляем стили для плитки */
+.spec_ssylki {
+	display: grid; /* Используем сетку */
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Автоматическое заполнение плиток */
+	gap: 15px; /* Отступы между плитками */
+	margin-top: 20px; /* Отступ сверху */
+}
+
+.tile {
+	position: relative; /* Для абсолютного позиционирования текста */
+	overflow: hidden; /* Обрезаем лишнее содержимое */
+	border-radius: 10px; /* Закругление углов плитки */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для плиток */
+	transition: transform 0.3s; /* Плавный переход для эффекта наведения */
+}
+
+.tile:hover {
+	transform: scale(1.05); /* Увеличение плитки при наведении */
+}
+
+.tile img {
+	width: 100%; /* Ширина изображения на 100% */
+	height: auto; /* Автоматическая высота */
+	display: block; /* Убираем пробелы под изображением */
+}
+
+.tile-text {
+	position: absolute; /* Абсолютное позиционирование текста */
+	bottom: 0; /* Прикрепляем текст к низу плитки */
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+	color: white; /* Цвет текста */
+	padding: 10px; /* Внутренние отступы */
+	text-align: center; /* Выравнивание текста по центру */
+	transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.tile:hover .tile-text {
+	background-color: rgba(0, 0, 0, 0.9); /* Более темный фон при наведении */
+}
+
+.spec_ssylki a {
+	text-decoration: none; /* Убираем подчеркивание */
+}
+
+
+
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #73ebf5;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #69b6bd;
+}
+
+#subscribe-response {
+    margin-top: 10px;
+    color: #333;
+}

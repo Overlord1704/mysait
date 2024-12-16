@@ -1,0 +1,44 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            color: #4CAF50; /* Цвет заголовка */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Убираем двойные границы */
+            margin-bottom: 20px; /* Отступ между таблицами */
+            background-color: #fff; /* Фон таблицы */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для таблицы */
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* Граница ячеек */
+            padding: 10px; /* Отступы в ячейках */
+            text-align: left; /* Выравнивание текста */
+        }
+
+        th {
+            background-color: #4CAF50; /* Цвет фона заголовка таблицы */
+            color: white; /* Цвет текста заголовка таблицы */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Цвет фона четных строк */
+        }
+
+        tr:hover {
+            background-color: #ddd; /* Цвет фона при наведении на строку */
+        }
+
+        .week {
+            margin-bottom: 20px; /* Отступ между неделями */
+        }
